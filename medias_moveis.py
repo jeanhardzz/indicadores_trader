@@ -20,8 +20,8 @@ dados.info()
 # In[3]:
 
 
-media=dados['Close'].rolling(window=20).mean()
-media
+medias_moveis=dados['Close'].rolling(window=20).mean()
+print(media_moveis)
 
 
 # # Médias Móveis Exponenciais
@@ -35,6 +35,6 @@ media
 # In[4]:
 
 
-media = dados['Close'].ewm(span=20, adjust=False).mean()
-media
+media_movel_exponencial = dados['Close'].ewm(span=20, adjust=False).mean()
+print(media_movel_exponencial)
 
